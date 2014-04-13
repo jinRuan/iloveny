@@ -50,7 +50,19 @@ MovingObstacle.prototype = {
 		// Chainsaw
 		else if (type == "B")					
 		{
-			params.image = "moving_obstacle_B";
+			alert("made moving thing");
+			//params.image = "moving_obstacle_B";
+			this.temp = this.addChild(new TGE.SpriteSheetAnimation().setup({
+				image : "player_running",
+				rows : 1,
+				columns : 16,
+				totalFrames : 16,
+	          	fps : 18,
+				looping : true,
+				visible : false
+			}));
+			this.temp.gotoAndPlay(0);
+
 			this.mHorizontalSpeed = 0.5;
 			this.mBobAmplitude = 8;
 			this.mBobFrequency = 4;
@@ -82,4 +94,4 @@ MovingObstacle.prototype = {
 	
 }
 
-extend(MovingObstacle, TGE.Sprite); 
+extend(MovingObstacle, TGE.SpriteSheetAnimation); 
