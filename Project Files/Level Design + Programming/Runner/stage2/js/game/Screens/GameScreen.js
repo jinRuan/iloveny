@@ -345,7 +345,7 @@ GameScreen.prototype = {
 		//Middle ground plane
 		this.artLayer.addChild(new TGE.ParallaxPane().setup({
 			image : "gamescreen_middleground",
-			worldY : 400,
+			worldY : 210,
 			trackingSpeed : 0.25 
 		}));
 		
