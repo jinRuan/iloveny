@@ -21,7 +21,7 @@ var level = [
 
     {player_speed:0.02},
     {fall_speed:0.004},
-    {boost_speed:0.04},
+    {boost_speed:0.03},
 
    //ObstaclesONE
     {begin_segment:"Some Obstacles"},

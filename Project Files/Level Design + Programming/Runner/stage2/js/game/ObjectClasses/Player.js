@@ -37,9 +37,9 @@ Player.prototype = {
 		this.animArray["run"] = this.addChild(new TGE.SpriteSheetAnimation().setup({
 			image : "player_running",
 			rows : 1,
-			columns : 4,
-			totalFrames : 4,
-			fps : 24,
+			columns : 16,
+			totalFrames : 16,
+			fps : 18,
 			looping : true,
 			visible : false
 		}));
@@ -47,10 +47,10 @@ Player.prototype = {
 		// Flying animation
 		this.animArray["fly"] = this.addChild(new TGE.SpriteSheetAnimation().setup({
 	        image : "player_flying",
-	        rows : 1,
+	        rows : 4,
 	        columns : 4,
 	        totalFrames : 4,
-	        fps : 24,
+	        fps : 5,
 	        looping : true,
 	        visible : false
 		}));
