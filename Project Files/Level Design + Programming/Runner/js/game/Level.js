@@ -1,11 +1,21 @@
-var generator = ["1","2","A","B"];
-var string = "";
+var generator = ["1","2","2","A","B","1","2","2","A","B"];
+
+//string of random obstacles
+var string1 = "";
 var i = 0;
-var randomnumber = Math.floor(Math.random() * 4);
-while (i<10){
-    string = string.concat(generator[Math.floor(Math.random() * 4)]);
+while (i<50){
+    string1 = string1.concat(generator[Math.floor(Math.random() * 10)]);
     i++;
 };
+
+//another string of random obstacles
+var string2 = "";
+var j = 0;
+while (j<50){
+    string2 = string2.concat(generator[Math.floor(Math.random() * 10)]);
+    j++;
+};
+
 
 var level = [
 
@@ -13,14 +23,18 @@ var level = [
     {fall_speed:0.003},
     {boost_speed:0.01},
 
-    //Obstacles
+    //ObstaclesONE
     {begin_segment:"Some Obstacles"},
 
-    {time:0, event:"obstacle_frequency", value:700},
+    {time:0, event:"obstacle_frequency", value:1},
 
-    {time:0, event:"obstacle_pattern", value:string}, //2A121B21
+    {time:0, event:"obstacle_pattern", value:string1}, //2A121B21
 
-    {time:1, event:"end_segment"},
+    {time:1, event:"obstacle_pattern", value:string1}, //2A121B21
+
+    {time:2, event:"obstacle_pattern", value:string1}, //2A121B21
+
+    {time:20, event:"end_segment"},
 
 
     //Coins
@@ -28,9 +42,23 @@ var level = [
 
     {time:0, event:"coin_y", value:0.75},
 
-    {time:1, event:"coin_frequency", value:1000},
+    {time:0, event:"coin_frequency", value:1000},
 
-    {time:2, event:"end_segment"},
+    {time:1, event:"end_segment"},
+
+
+    //ObstaclesTWO
+    {begin_segment:"Some Obstacles"},
+
+    {time:0, event:"obstacle_frequency", value:700},
+
+    {time:0, event:"obstacle_pattern", value:string2}, //2A121B21
+
+    {time:1, event:"obstacle_pattern", value:string2}, //2A121B21
+
+    {time:2, event:"obstacle_pattern", value:string2}, //2A121B21
+
+    {time:20, event:"end_segment"},
 
 
     /*
