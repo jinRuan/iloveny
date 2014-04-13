@@ -412,10 +412,9 @@ GameScreen.prototype = {
         }
 
         //this.mPlayer.SetSpeed(+0.05);
-        if (this.mCoins >= 4){
+        if (this.mCoins >= 3){
             this.EndGame();
             window.location.href = '../../../Project Files/Level Design + Programming/Runner/stage2/index.html';
-
         }
 
 
