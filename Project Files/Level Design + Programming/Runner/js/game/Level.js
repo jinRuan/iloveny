@@ -27,7 +27,7 @@ while (k < 5){
 var level = [
 
     {player_speed:0.02},
-    {fall_speed:0.005},
+    {fall_speed:0.004},
     {boost_speed:0.04},
 
     // //ObstaclesONE
@@ -47,21 +47,22 @@ var level = [
     //Coins
     {begin_segment:"Coin Line"},
 
-    {time:0, event:"coin_y", value:0.75},
-
+    {time:0, event:"coin_height", value:0.50},
     {time:1, event:"coin_box", size:1},
 
     {time:1, event:"obstacle_frequency", value:500},
     {time:1, event:"obstacle_pattern", value:string3},
 
+    {time:2, event:"coin_height", value:0.40},
     {time:2, event:"coin_box", size:1},
 
-    {time:2, event:"obstacle_frequency", value:500},
-    {time:2, event:"obstacle_pattern", value:string3},
+    {time:3, event:"obstacle_frequency", value:500},
+    {time:3, event:"obstacle_pattern", value:string3},
 
-    {time:3, event:"coin_box", size:1},
+    {time:4, event:"coin_height", value:0.20},
+    {time:4, event:"coin_box", size:1},
 
-    {time:1, event:"end_segment"},
+    {time:5, event:"end_segment"},
 
 
     // //ObstaclesTWO

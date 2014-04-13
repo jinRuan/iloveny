@@ -4,24 +4,42 @@ var level = [
     {fall_speed:0.003},
     {boost_speed:0.01},
 
-    //Obstacles
+   //ObstaclesONE
     {begin_segment:"Some Obstacles"},
 
-   {time:0,     event:"obstacle_frequency",     value:700},
+    {time:0, event:"obstacle_frequency", value:500},
 
-   {time:0,     event:"obstacle_pattern",     value:"1"}, //2A121B21
+    {time:0, event:"obstacle_pattern", value:string1}, //2A121B21
 
-   {time:3,    event:"end_segment"},
+    {time:1, event:"obstacle_pattern", value:string1}, //2A121B21
+
+    {time:2, event:"obstacle_pattern", value:string1}, //2A121B21
+
+    {time:3, event:"end_segment"},
 
 
     //Coins
     {begin_segment:"Coin Line"},
 
-    {time:0,     event:"coin_y",         value:0.75},
+    {time:0, event:"coin_y", value:0.75},
 
-    {time:2,     event:"coin_frequency", value:500},
+    {time:1, event:"coin_box", size:1},
 
-    {time:3,     event:"end_segment"},
+    {time:1, event:"end_segment"},
+
+
+    //ObstaclesTWO
+    {begin_segment:"Some Obstacles"},
+
+    {time:0, event:"obstacle_frequency", value:700},
+
+    {time:0, event:"obstacle_pattern", value:string2}, //2A121B21
+
+    {time:1, event:"obstacle_pattern", value:string2}, //2A121B21
+
+    {time:2, event:"obstacle_pattern", value:string2}, //2A121B21
+
+    {time:3, event:"end_segment"},
 
 /*
     //Obstacle
