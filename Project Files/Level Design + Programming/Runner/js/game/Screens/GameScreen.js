@@ -414,6 +414,8 @@ GameScreen.prototype = {
         //this.mPlayer.SetSpeed(+0.05);
         if (this.mCoins >= 7){
             this.EndGame();
+            window.location.href = '../../../stage2/index.html';
+
         }
 
 
