@@ -162,7 +162,7 @@ GameScreen.prototype = {
 				
 				// ending game?
 				else if (nextEvent.event == "game_finished") {
-					
+					/*
 					if (this.mCoins == 1){
 						this.mPlayer.SetSpeed(0.03);
 
@@ -193,12 +193,12 @@ GameScreen.prototype = {
 
 					}
 
-					else if (this.mCoins == 7){
+					else if (this.mCoins >= 7){
 						this.EndGame();
 					}
 
 
-
+                    */
 				
 					
 
@@ -412,11 +412,8 @@ GameScreen.prototype = {
 		this.mCoins += 1;
 		//alert(this.mPlayer.player_speed);
 
-		//this.mPlayer.SetSpeed(this.mPlayer.mHorizontalSpeed + 0.001);
-		//alert(this.mPlayer.player_speed);
-		// if (this.mCoins == 7){
-		// 	this.EndGame();
-		// }
+		this.mPlayer.SetSpeed(+0.1);
+
 
 	},
 	

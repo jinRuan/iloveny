@@ -3,7 +3,7 @@ Player = function() {
 	
 	// Player settings
 	this.mGroundHeight = 45;
-	this.mHorizontalSpeed = 0;
+	this.mHorizontalSpeed = 0.01;
 	this.mVerticalSpeed = 0;
 	this.mFallSpeed = 0;
 	this.mBoostSpeed = 0;
