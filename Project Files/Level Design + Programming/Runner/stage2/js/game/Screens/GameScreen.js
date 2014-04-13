@@ -285,7 +285,7 @@ GameScreen.prototype = {
 	},
 	
 	GenerateCoinBox: function(size){
-        var size = Math.max(2,size);
+        var size = Math.max(1,size);
         
 
         // Define the origin position
