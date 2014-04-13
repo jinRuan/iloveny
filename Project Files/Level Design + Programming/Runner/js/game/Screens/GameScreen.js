@@ -410,9 +410,11 @@ GameScreen.prototype = {
 
 		//Increase coins
 		this.mCoins += 1;
-		//alert(this.mPlayer.player_speed);
 
 		this.mPlayer.SetSpeed(+0.1);
+        if (this.mCoins >= 7){
+            this.GameEnd();
+        }
 
 
 	},
