@@ -1,25 +1,10 @@
-var generator = ["1","2","2","A","B"];
+var generator = ["1","1","2","2","2","A","A","B","B"];
 
 //string of random obstacles
-var string1 = "";
-var i = 0;
-while (i<50){
-    string1 = string1.concat(generator[Math.floor(Math.random() * 5)]);
-    i++;
-};
-
-//another string of random obstacles
-var string2 = "";
-var j = 0;
-while (j<50){
-    string2 = string2.concat(generator[Math.floor(Math.random() * 5)]);
-    j++;
-};
-
 var string3 = "";
 var k = 0;
-while (k < 5){
-    string3 = string3.concat(generator[Math.floor(Math.random() * 5)]);
+while (k < 10){
+    string3 = string3.concat(generator[Math.floor(Math.random() * 7)]);
     k++;
 };
 
