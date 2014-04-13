@@ -18,7 +18,7 @@ MovingObstacle = function()
 
 MovingObstacle.prototype = {
 
-
+	
 	setup : function(params) 
 	{
 		// Determine type of obstacle
@@ -28,7 +28,10 @@ MovingObstacle.prototype = {
 		this.mGame = params.gameScreen;
     	var hack_extraTime = this.mGame.width/this.mGame.GetPlayer().mHorizontalSpeed;
 		params.worldX = params.ox + hack_extraTime * this.mHorizontalSpeed;
-		params.worldY = this.mGame.height/3;
+		
+		var protoheight;
+		protoheight = (Math.random() * 2 + 2);
+		params.worldY = (this.mGame.height)/protoheight;
 
 		// Boring stuff
 		MovingObstacle.superclass.setup.call(this,params);
@@ -43,8 +46,8 @@ MovingObstacle.prototype = {
 		{
 			params.image = "moving_obstacle_A";
 			this.mHorizontalSpeed = 2;
-			this.mBobAmplitude = 3;
-			this.mBobFrequency = 1.5;
+			this.mBobAmplitude = 4;
+			this.mBobFrequency = 4;
 		} 
 		
 		// Chainsaw
@@ -52,8 +55,8 @@ MovingObstacle.prototype = {
 		{
 			params.image = "moving_obstacle_B";
 			this.mHorizontalSpeed = 0.5;
-			this.mBobAmplitude = 8;
-			this.mBobFrequency = 4;
+			this.mBobAmplitude = 1;
+			this.mBobFrequency = 1.5;
 		}
 		
 	},
