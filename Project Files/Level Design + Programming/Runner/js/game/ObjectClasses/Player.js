@@ -39,7 +39,7 @@ Player.prototype = {
 			rows : 1,
 			columns : 16,
 			totalFrames : 16,
-          	fps : 14,
+          	fps : 18,
 			looping : true,
 			visible : false
 		}));
