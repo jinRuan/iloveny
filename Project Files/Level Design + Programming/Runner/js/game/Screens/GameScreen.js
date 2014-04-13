@@ -163,35 +163,6 @@ GameScreen.prototype = {
 				// ending game?
 				else if (nextEvent.event == "game_finished") {
 					/*
-					if (this.mCoins == 1){
-						this.mPlayer.SetSpeed(0.03);
-
-					}
-
-					else if (this.mCoins == 2){
-						this.mPlayer.SetSpeed(0.04);
-
-					}
-
-					else if (this.mCoins == 3){
-						this.mPlayer.SetSpeed(0.05);
-
-					}
-
-					else if (this.mCoins == 4){
-						this.mPlayer.SetSpeed(0.06);
-
-					}
-
-					else if (this.mCoins == 5){
-						this.mPlayer.SetSpeed(0.07);
-
-					}
-
-					else if (this.mCoins == 6){
-						this.mPlayer.SetSpeed(0.08);
-
-					}
 
 					else if (this.mCoins >= 7){
 						this.EndGame();
@@ -410,10 +381,39 @@ GameScreen.prototype = {
 
 		//Increase coins
 		this.mCoins += 1;
+        if (this.mCoins == 1){
+            this.mPlayer.SetSpeed(0.03);
 
-		this.mPlayer.SetSpeed(+0.1);
+        }
+
+        else if (this.mCoins == 2){
+            this.mPlayer.SetSpeed(0.04);
+
+        }
+
+        else if (this.mCoins == 3){
+            this.mPlayer.SetSpeed(0.05);
+
+        }
+
+        else if (this.mCoins == 4){
+            this.mPlayer.SetSpeed(0.06);
+
+        }
+
+        else if (this.mCoins == 5){
+            this.mPlayer.SetSpeed(0.07);
+
+        }
+
+        else if (this.mCoins == 6){
+            this.mPlayer.SetSpeed(0.08);
+
+        }
+
+        //this.mPlayer.SetSpeed(+0.05);
         if (this.mCoins >= 7){
-            this.GameEnd();
+            this.EndGame();
         }
 
 
