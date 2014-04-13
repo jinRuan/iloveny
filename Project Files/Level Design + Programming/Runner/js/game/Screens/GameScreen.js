@@ -256,7 +256,7 @@ GameScreen.prototype = {
 	},
 	
 	GenerateCoinBox: function(size){
-        var size = Math.max(2,size);
+        var size = Math.max(1,size);
         
 
         // Define the origin position
@@ -382,32 +382,32 @@ GameScreen.prototype = {
 		//Increase coins
 		this.mCoins += 1;
         if (this.mCoins == 1){
-            this.mPlayer.SetSpeed(0.03);
+            this.mPlayer.SetSpeed(0.025);
 
         }
 
         else if (this.mCoins == 2){
-            this.mPlayer.SetSpeed(0.04);
+            this.mPlayer.SetSpeed(0.03);
 
         }
 
         else if (this.mCoins == 3){
-            this.mPlayer.SetSpeed(0.05);
+            this.mPlayer.SetSpeed(0.035);
 
         }
 
         else if (this.mCoins == 4){
-            this.mPlayer.SetSpeed(0.06);
+            this.mPlayer.SetSpeed(0.04);
 
         }
 
         else if (this.mCoins == 5){
-            this.mPlayer.SetSpeed(0.07);
+            this.mPlayer.SetSpeed(0.045);
 
         }
 
         else if (this.mCoins == 6){
-            this.mPlayer.SetSpeed(0.08);
+            this.mPlayer.SetSpeed(0.05);
 
         }
 
