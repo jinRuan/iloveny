@@ -9,7 +9,7 @@ var level = [
 
    {time:0,     event:"obstacle_frequency",     value:700},
 
-   {time:0,     event:"obstacle_pattern",     value:"1"}, //2A121B21
+   {time:0,     event:"obstacle_pattern",     value:"12"}, //2A121B21
 
    {time:3,    event:"end_segment"},
 
