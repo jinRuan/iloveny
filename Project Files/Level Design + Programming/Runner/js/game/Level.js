@@ -34,7 +34,7 @@ var level = [
 
     {time:2, event:"obstacle_pattern", value:string1}, //2A121B21
 
-    {time:20, event:"end_segment"},
+    {time:3, event:"end_segment"},
 
 
     //Coins
@@ -44,7 +44,7 @@ var level = [
 
     {time:0, event:"coin_frequency", value:1000},
 
-    {time:1, event:"end_segment"},
+    {time:10, event:"end_segment"},
 
 
     //ObstaclesTWO
@@ -58,7 +58,7 @@ var level = [
 
     {time:2, event:"obstacle_pattern", value:string2}, //2A121B21
 
-    {time:10, event:"end_segment"},
+    {time:3, event:"end_segment"},
 
 
     /*
