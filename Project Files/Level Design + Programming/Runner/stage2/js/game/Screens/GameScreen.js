@@ -443,6 +443,8 @@ GameScreen.prototype = {
         //this.mPlayer.SetSpeed(+0.05);
         if (this.mCoins >= 7){
             this.EndGame();
+            window.location.href = '../../../Project Files/Level Design + Programming/Runner/index.html';
+
         }
 
 		//alert(this.mPlayer.player_speed);
