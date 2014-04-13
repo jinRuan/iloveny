@@ -26,7 +26,7 @@ while (k < 5){
 
 var level = [
 
-    {player_speed:0.02},
+    {player_speed:0.015},
     {fall_speed:0.004},
     {boost_speed:0.04},
 
@@ -53,16 +53,16 @@ var level = [
     {time:1, event:"obstacle_frequency", value:500},
     {time:1, event:"obstacle_pattern", value:string3},
 
-    {time:2, event:"coin_height", value:0.40},
-    {time:2, event:"coin_box", size:1},
+    {time:3, event:"coin_height", value:0.40},
+    {time:3, event:"coin_box", size:1},
 
-    {time:3, event:"obstacle_frequency", value:500},
-    {time:3, event:"obstacle_pattern", value:string3},
+    {time:5, event:"obstacle_frequency", value:500},
+    {time:5, event:"obstacle_pattern", value:string3},
 
-    {time:4, event:"coin_height", value:0.20},
-    {time:4, event:"coin_box", size:1},
+    {time:6, event:"coin_height", value:0.20},
+    {time:6, event:"coin_box", size:1},
 
-    {time:5, event:"end_segment"},
+    {time:7, event:"end_segment"},
 
 
     // //ObstaclesTWO

@@ -1,8 +1,27 @@
+var generator = ["1","2","2","A","B"];
+
+//string of random obstacles
+var string1 = "";
+var i = 0;
+while (i<50){
+    string1 = string1.concat(generator[Math.floor(Math.random() * 5)]);
+    i++;
+};
+
+//another string of random obstacles
+var string2 = "";
+var j = 0;
+while (j<50){
+    string2 = string2.concat(generator[Math.floor(Math.random() * 5)]);
+    j++;
+};
+
+
 var level = [
 
     {player_speed:0.02},
-    {fall_speed:0.003},
-    {boost_speed:0.01},
+    {fall_speed:0.004},
+    {boost_speed:0.04},
 
    //ObstaclesONE
     {begin_segment:"Some Obstacles"},
